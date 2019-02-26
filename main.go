@@ -1,10 +1,11 @@
-package looper
+package main
 
 import (
+	"fmt"
 	"time"
 )
 
-func present() {
+func main() {
 	const (
 		// These paths will be different on your system.
 		seleniumPath     = "vendor/selenium-server-standalone-3.141.59.jar"
@@ -12,6 +13,9 @@ func present() {
 		chromeDriverPath = "vendor/chromedriver.exe"
 	)
 
-	time.Sleep(5 * time.Second)
+	for {
+		fmt.Println("what?")
+		time.Sleep(5 * time.Second)
+	}
 
 }
